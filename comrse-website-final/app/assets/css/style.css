@@ -6691,6 +6691,10 @@ button.close {
     display: none !important;
   }
 }
+html {
+  font-family: 'proxima_nova_light';
+}
+
 .col-sm-5 {
   padding: 0 7.5px;
 }
@@ -6701,6 +6705,43 @@ button.close {
 
 .col-lg-4 {
   height: 100%;
+}
+.col-lg-4 .act-ins {
+  position: absolute;
+  bottom: 86px;
+}
+.col-lg-4 .act-ins h2 {
+  margin-bottom: 10px;
+}
+.col-lg-4 .act-tnc {
+  position: absolute;
+  bottom: 60px;
+}
+.col-lg-4 .act-tnc h2 {
+  margin-bottom: 10px;
+}
+.col-lg-4 .act-rsv {
+  position: absolute;
+  bottom: 88px;
+}
+.col-lg-4 .act-rsv h2 {
+  margin-bottom: 10px;
+}
+
+#insights-section .col-lg-4 img.act-ins-img {
+  margin-left: -10px;
+}
+#insights-section .col-lg-4 img.act-tnc-img {
+  margin-left: 30px;
+}
+#insights-section .col-lg-4 img.act-rsv-img {
+  position: absolute;
+  margin-left: -30px;
+  bottom: 350px;
+}
+
+#campaigns-section .col-lg-4 img {
+  width: 100%;
 }
 
 .float-right {
@@ -6732,7 +6773,7 @@ button.close {
 }
 
 div.learn-more-height {
-  height: 430px;
+  height: 580px;
 }
 
 .btn-lg, .btn-group-lg > .btn {
@@ -6918,8 +6959,8 @@ footer li.social-nav a {
 body {
   width: 100%;
   height: 100%;
-  font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  color: #000;
+  font-family: "proxima_nova_light", sans-serif;
+  color: #929598;
   background-color: #fff;
 }
 
@@ -6935,9 +6976,8 @@ h4,
 h5,
 h6 {
   margin: 0 0 20px;
-  text-transform: uppercase;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 700;
+  font-family: "proxima_nova_semibold",sans-serif;
+  font-weight: 400;
   letter-spacing: 1px;
 }
 
@@ -6950,8 +6990,9 @@ p {
 @media (min-width: 767px) {
   p {
     margin: 0 0 35px;
-    font-size: 20px;
-    line-height: 1.6;
+    font-size: 17px;
+    line-height: 1.4;
+    width: 85%;
   }
 }
 a {
@@ -7036,7 +7077,7 @@ a:focus {
   }
 
   .top-nav-collapse {
-    padding: 0;
+    padding: 10px 0;
     background-color: #fff;
   }
   .top-nav-collapse span {
