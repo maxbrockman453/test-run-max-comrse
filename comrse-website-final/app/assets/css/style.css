@@ -7108,7 +7108,7 @@ footer li:hover {
 }
 
 #pricing-package .col-md-5ths {
-  height: 500px;
+  height: 565px;
 }
 
 #pricing-package p {
@@ -7148,6 +7148,10 @@ footer li:hover {
 .price-title {
   height: 65px;
   margin-bottom: -5px;
+}
+
+.gateways-img {
+  margin-bottom: 20px;
 }
 
 body {
