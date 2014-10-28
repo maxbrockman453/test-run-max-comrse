@@ -1,9 +1,2 @@
-.sass-cache/152773ba31cfc6a0527ce7a46b31d7a4ede4d9c3/
-	.sass-cache/44e7d8081ece24b87c7d0f529365e48013f7e327/
-	.sass-cache/699c6aedbad2c339c850b7d542a5164507dd3ace/
-	.sass-cache/ae9ae0f5f848e796b5d29ef7eb83927f1aa994c9/
-	node_modules/.bin/
-	node_modules/node-sass/
-	node_modules/sass/
-	comrse-website-final/.sass-cache/
-	comrse-website-final/node_modules/
+.sass-cache/
+node_modules/
