@@ -6691,13 +6691,83 @@ button.close {
     display: none !important;
   }
 }
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
 html {
   font-family: 'proxima_nova_light';
+}
+
+li {
+  list-style: none;
+}
+
+.padding-top-xl {
+  padding-top: 150px;
+}
+
+.padding-top-lg {
+  padding-top: 80px;
+}
+
+.padding-top-md {
+  padding-top: 50px;
+}
+
+.padding-top-sm {
+  padding-top: 30px;
+}
+
+.padding-top-xs {
+  padding-top: 20px;
+}
+
+.carousel-caption {
+  color: #5093b7;
+}
+
+.carousel-control.right, .carousel-control.left {
+  background-image: none;
+}
+
+.carousel-indicators li {
+  border: 2px solid #5093b7;
+  background-color: #5093b7;
+}
+
+.glyphicon {
+  color: #767676;
+}
+
+.item {
+  background: #fff;
+  text-align: center;
+  height: 300px !important;
+}
+
+.carousel {
+  margin-top: 20px;
 }
 
 .red-tooltip {
   background-color: #e97063;
   color: #fff;
+}
+
+a#pop:hover {
+  border: 2px solid #e97063;
+  padding: 0.2em;
+  border-radius: 4px;
+  color: #e97063;
+}
+
+.even-space-ul {
+  padding: 0;
+}
+.even-space-ul li {
+  padding: 5px 0;
 }
 
 .col-sm-5 {
@@ -6875,11 +6945,11 @@ footer p {
 footer h1, footer h2, footer h3, footer h4, footer h5 {
   margin: 0 0 15px;
 }
-footer li {
-  list-style: none;
-}
 footer li.social-nav a {
   display: inline-block;
+}
+footer li:hover {
+  color: #20ac98;
 }
 
 .inline-form {
@@ -6979,22 +7049,6 @@ footer li.social-nav a {
   font-size: 15px;
 }
 
-.padding-top-lg {
-  padding-top: 80px;
-}
-
-.padding-top-md {
-  padding-top: 50px;
-}
-
-.padding-top-sm {
-  padding-top: 30px;
-}
-
-.padding-top-xl {
-  padding-top: 150px;
-}
-
 body {
   width: 100%;
   height: 100%;
@@ -7028,7 +7082,7 @@ p {
 
 @media (min-width: 767px) {
   p {
-    margin: 0 0 35px;
+    margin: 0 0 20px;
     font-size: 17px;
     line-height: 1.4;
   }
