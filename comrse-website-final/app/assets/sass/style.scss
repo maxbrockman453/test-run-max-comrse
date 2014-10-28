@@ -370,9 +370,12 @@ footer {
   border-bottom: 1px solid $comrse-light-gray; 
 
 }
+#pricing-package .col-md-5ths{
+  height: 500px;
+}
 #pricing-package p{
   font-family: "proxima_nova_light";
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: $margin-bottom-sm;
 }
 .border-right{
@@ -382,12 +385,10 @@ footer {
   padding-left: 10px;
   padding-right: 10px;
 }
-.border-left{
-  border-right: 1px solid $comrse-light-gray;
-  margin-left: -10px;
-  margin-right: -10px;
-  padding-left: 10px;
-  padding-right: 10px;
+.no-border-right{
+  .border-right{
+  border-right: 0px;
+  }
 }
 .btn-primary-round{
   border-radius: 100px;
@@ -401,6 +402,10 @@ footer {
 }
 .sbold-text{
   font-family: "proxima_nova_semibold"
+}
+.price-title{
+  height: 65px;
+  margin-bottom: -5px;
 }
 //========================================================================
 body {
