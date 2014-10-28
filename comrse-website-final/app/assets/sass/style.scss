@@ -1,10 +1,43 @@
 @import "app/bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap";
+@import "../fonts/font-style.css";
+
+
+
 
 html {
   font-family: 'proxima_nova_light';
 }
-
-
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.col-xs-5ths {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-5ths {
+    width: 20%;
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-5ths {
+    width: 20%;
+    float: left;
+  }
+}
 
 
 //====================================================================
@@ -14,8 +47,12 @@ $padding-top-md: 50px;
 $padding-top-sm: 30px;
 $padding-top-xs: 15px;
 
+$margin-bottom-sm: 20px;
+
 $comrse-green: #20ac98;
 $comrse-blue: #5093b7;
+$comrse-font-gray: #929598;
+$comrse-light-gray: #dedede;
 
 .red-tooltip {
   background-color: #e97063;
@@ -324,8 +361,47 @@ footer {
 .padding-top-xl {
   padding-top: $padding-top-xl;
 }
+// ========================== Chris is a boss ========================
+#pricing-package h2{
+  font-size: 20px;
+  padding-top: $padding-top-xs;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid $comrse-light-gray; 
 
-
+}
+#pricing-package p{
+  font-family: "proxima_nova_light";
+  font-size: 16px;
+  margin-bottom: $margin-bottom-sm;
+}
+.border-right{
+  border-right: 1px solid $comrse-light-gray;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.border-left{
+  border-right: 1px solid $comrse-light-gray;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.btn-primary-round{
+  border-radius: 100px;
+  background: $comrse-blue;
+  margin-bottom: $margin-bottom-sm;
+  color: white;
+  text-transform: capitalize !important;
+}
+.light-text{
+  font-family: "proxima_nova_light"
+}
+.sbold-text{
+  font-family: "proxima_nova_semibold"
+}
 //========================================================================
 body {
   width: 100%;
