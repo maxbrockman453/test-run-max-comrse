@@ -26,6 +26,10 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
-    $(window).scrollTop(0);
-});
+  $(window).scrollTop(0);
 
+  $('[data-toggle="popover"]').popover({
+  trigger: 'hover',
+      'placement': 'bottom'
+  });
+});
