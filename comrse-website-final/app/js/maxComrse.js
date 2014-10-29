@@ -28,8 +28,13 @@ $('.navbar-collapse ul li a').click(function() {
 $(document).ready(function(){
   $(window).scrollTop(0);
 
+  // TOOL TIP ====================================
   $('[data-toggle="popover"]').popover({
   trigger: 'hover',
       'placement': 'bottom'
   });
+  // CAROUSEL ====================================
+   $("#myCarousel1 , #myCarousel2").carousel({
+       interval : false
+   });
 });

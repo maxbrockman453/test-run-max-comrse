@@ -18,6 +18,10 @@ li {
   list-style: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -72,14 +76,50 @@ $padding-top-xs: 20px;
 .padding-top-xs {
   padding-top: $padding-top-xs;
 }
+
+$margin-top-xl: 150px;
+$margin-top-lg: 80px;
+$margin-top-md: 50px;
+$margin-top-sm: 30px;
+$margin-top-xs: 20px;
+.margin-top-xl {
+  margin-top: $margin-top-xl;
+}
+.margin-top-lg {
+  margin-top: $margin-top-lg;
+}
+.margin-top-md {
+  margin-top: $margin-top-md;
+}
+.margin-top-sm {
+  margin-top: $margin-top-sm;
+}
+.margin-top-xs {
+  margin-top: $margin-top-xs;
+}
 $comrse-green: #20ac98;
 $comrse-blue: #5093b7;
 $comrse-red: #e97063;
 $comrse-yellow: #dfc074;
+#myCarousel1 {
+  .item {
+    height: 400px;
+  }
 
+  .carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    border: 2px solid $comrse-blue;
+    background-color: #fff;
+  }
 
-//THIS IS FOR THE CAROUSEL=====================
-
+  .carousel-indicators li {
+    background-color: $comrse-blue;
+    width: 12px;
+    height: 12px;
+  }
+}
+//THIS IS FOR THE CAROUSEL2=====================
 .carousel-caption {
   color: $comrse-blue;
 }
@@ -88,9 +128,15 @@ $comrse-yellow: #dfc074;
   background-image: none;
 }
 
+.carousel-indicators .active {
+  width: 100px;
+  height: 100px;
+  border: 2px solid $comrse-blue
+}
+
 .carousel-indicators li {
-  border: 2px solid $comrse-blue;
-  background-color: $comrse-blue;
+  width: 100px;
+  height: 100px;
 }
 
 .glyphicon {
@@ -98,13 +144,30 @@ $comrse-yellow: #dfc074;
 }
 
 .item{
-    background: #fff;
-    text-align: center;
-    height: 300px !important;
+  background: #fff;
+  text-align: center;
+  height: 550px !important;
+  img {
+    height: 100%;
+    margin: 0 auto;
+  }
 }
+
 .carousel{
     margin-top: 20px;
 }
+
+.mobile-button {
+  background: url(../images/mobile-button.png) no-repeat center;
+}
+.desktop-button {
+  background: url(../images/desktop-button.png) no-repeat center;
+}
+.social-button {
+  background: url(../images/social-button.png) no-repeat center;
+}
+
+
 
 $padding-top-xs: 15px;
 
@@ -146,7 +209,7 @@ a#pop {
   height: 100%;
   .act-ins {
     position: absolute;
-    bottom: 58px;
+    bottom: 83px;
     h2 {
       margin-bottom: 10px;
     }
@@ -301,6 +364,9 @@ a.footer-brand img {
   padding-bottom: $padding-top-md;
   p {
     color: #e2e2e2;
+    &:hover {
+      color: $comrse-green;
+    }
   }
 }
 
@@ -316,15 +382,19 @@ footer {
     margin: 0 0 15px;
   }
   li {
+    padding: 4px 0;
     &.social-nav a {
       display: inline-block;
     }
-    &:hover {
+    :hover {
       color: $comrse-green;
     }
   }
 }
 
+.social-icons a {
+  padding: 0 8px;
+}
 
 .inline-form {
   display: inline;
@@ -392,7 +462,7 @@ footer {
   display: inline-block;
   margin: 0 30px;
   &.background-gray {
-    background-color: #c4ccd1;
+    background-color: #e2e2e2;
     border: none;
     width:100%;
     margin: 25px 0;
@@ -404,6 +474,13 @@ footer {
   }
   .no-space-left {
     padding-left:0;
+  }
+  h4 {
+    margin: 0;
+    line-height: 38px;
+  }
+  p {
+    margin: 0;
   }
 }
 
@@ -574,12 +651,12 @@ a:focus {
   outline: 0;
 }
 
-.navbar-custom a {
-  color: #fff;
-}
+// .navbar-custom a {
+//   color: #fff;
+// }
 
 .navbar-custom .nav li.active {
-  outline: nonte;
+  outline: none;
   background-color: rgba(255,255,255,.3);
 }
 
@@ -593,7 +670,18 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
   outline: 0;
-  background-color: rgba(255,255,255,.3);
+  border-bottom: 2px solid $comrse-green;
+  background-color: transparent;
+  color: $comrse-green;
+}
+
+.navbar-custom .nav li a.btn-default:hover,
+.navbar-custom .nav li a.btn-default:focus,
+.navbar-custom .nav li a.btn-default.active {
+  outline: 0;
+  border-bottom: 1px solid $comrse-green;
+  background-color: $comrse-green;
+  color: #fff;
 }
 
 @media(min-width:767px) {
@@ -758,6 +846,20 @@ a:focus {
   border: 1px solid $comrse-green;
   color: #fff;
   background-color: transparent;
+  &:hover {
+    background-color: $comrse-green;
+    color: #fff;
+  }
+}
+
+.btn-default-green {
+  border: 1px solid $comrse-green;
+  color: $comrse-green;
+  background-color: transparent;
+  &:hover {
+    background-color: $comrse-green;
+    color: #fff;
+  }
 }
 
 .btn-default-solid {

@@ -6705,6 +6705,10 @@ li {
   list-style: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
@@ -6758,6 +6762,41 @@ li {
   padding-top: 20px;
 }
 
+.margin-top-xl {
+  margin-top: 150px;
+}
+
+.margin-top-lg {
+  margin-top: 80px;
+}
+
+.margin-top-md {
+  margin-top: 50px;
+}
+
+.margin-top-sm {
+  margin-top: 30px;
+}
+
+.margin-top-xs {
+  margin-top: 20px;
+}
+
+#myCarousel1 .item {
+  height: 400px;
+}
+#myCarousel1 .carousel-indicators .active {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #5093b7;
+  background-color: #fff;
+}
+#myCarousel1 .carousel-indicators li {
+  background-color: #5093b7;
+  width: 12px;
+  height: 12px;
+}
+
 .carousel-caption {
   color: #5093b7;
 }
@@ -6766,9 +6805,15 @@ li {
   background-image: none;
 }
 
-.carousel-indicators li {
+.carousel-indicators .active {
+  width: 100px;
+  height: 100px;
   border: 2px solid #5093b7;
-  background-color: #5093b7;
+}
+
+.carousel-indicators li {
+  width: 100px;
+  height: 100px;
 }
 
 .glyphicon {
@@ -6778,11 +6823,27 @@ li {
 .item {
   background: #fff;
   text-align: center;
-  height: 300px !important;
+  height: 550px !important;
+}
+.item img {
+  height: 100%;
+  margin: 0 auto;
 }
 
 .carousel {
   margin-top: 20px;
+}
+
+.mobile-button {
+  background: url(../images/mobile-button.png) no-repeat center;
+}
+
+.desktop-button {
+  background: url(../images/desktop-button.png) no-repeat center;
+}
+
+.social-button {
+  background: url(../images/social-button.png) no-repeat center;
 }
 
 .red-tooltip {
@@ -6817,7 +6878,7 @@ a#pop:hover {
 }
 .col-md-4 .act-ins {
   position: absolute;
-  bottom: 58px;
+  bottom: 83px;
 }
 .col-md-4 .act-ins h2 {
   margin-bottom: 10px;
@@ -6966,6 +7027,9 @@ a.footer-brand img {
 .footer-bottom p {
   color: #e2e2e2;
 }
+.footer-bottom p:hover {
+  color: #20ac98;
+}
 
 footer {
   padding: 50px 0px 0px 0px;
@@ -6979,11 +7043,18 @@ footer p {
 footer h1, footer h2, footer h3, footer h4, footer h5 {
   margin: 0 0 15px;
 }
+footer li {
+  padding: 4px 0;
+}
 footer li.social-nav a {
   display: inline-block;
 }
-footer li:hover {
+footer li :hover {
   color: #20ac98;
+}
+
+.social-icons a {
+  padding: 0 8px;
 }
 
 .inline-form {
@@ -7048,7 +7119,7 @@ footer li:hover {
   margin: 0 30px;
 }
 .bordered-form.background-gray {
-  background-color: #c4ccd1;
+  background-color: #e2e2e2;
   border: none;
   width: 100%;
   margin: 25px 0;
@@ -7060,6 +7131,13 @@ footer li:hover {
 }
 .bordered-form .no-space-left {
   padding-left: 0;
+}
+.bordered-form h4 {
+  margin: 0;
+  line-height: 38px;
+}
+.bordered-form p {
+  margin: 0;
 }
 
 .navbar-brand {
@@ -7236,12 +7314,8 @@ a:focus {
   outline: 0;
 }
 
-.navbar-custom a {
-  color: #fff;
-}
-
 .navbar-custom .nav li.active {
-  outline: nonte;
+  outline: none;
   background-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -7255,7 +7329,18 @@ a:focus {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a.active {
   outline: 0;
-  background-color: rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid #20ac98;
+  background-color: transparent;
+  color: #20ac98;
+}
+
+.navbar-custom .nav li a.btn-default:hover,
+.navbar-custom .nav li a.btn-default:focus,
+.navbar-custom .nav li a.btn-default.active {
+  outline: 0;
+  border-bottom: 1px solid #20ac98;
+  background-color: #20ac98;
+  color: #fff;
 }
 
 @media (min-width: 767px) {
@@ -7408,6 +7493,20 @@ a:focus {
   border: 1px solid #20ac98;
   color: #fff;
   background-color: transparent;
+}
+.btn-default:hover {
+  background-color: #20ac98;
+  color: #fff;
+}
+
+.btn-default-green {
+  border: 1px solid #20ac98;
+  color: #20ac98;
+  background-color: transparent;
+}
+.btn-default-green:hover {
+  background-color: #20ac98;
+  color: #fff;
 }
 
 .btn-default-solid {
