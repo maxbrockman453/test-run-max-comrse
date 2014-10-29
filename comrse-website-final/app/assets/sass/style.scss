@@ -527,7 +527,7 @@ footer {
 
 }
 #pricing-package .col-md-5ths{
-  height: 500px;
+  height: 565px;
 }
 #pricing-package p{
   font-family: "proxima_nova_light";
@@ -562,6 +562,9 @@ footer {
 .price-title{
   height: 65px;
   margin-bottom: -5px;
+}
+.gateways-img{
+  margin-bottom: $margin-bottom-sm;
 }
 //========================================================================
 body {
